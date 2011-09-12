@@ -243,7 +243,7 @@ NSInteger intSort(id info1, id info2, void *context) {
 	
 	NSMutableArray *row = [gridCells objectAtIndex:info.yPosition];
 	
-	if (info.xPosition > [row count]) return;
+	if (info.xPosition >= [row count]) return;
 	
 	DTGridViewCell *cell = [row objectAtIndex:info.xPosition];
 	
@@ -506,7 +506,7 @@ NSInteger intSort(id info1, id info2, void *context) {
 				else if ([[leftRightCells objectForKey:[NSString stringWithFormat:@"%i", info.yPosition]] xPosition] > info.xPosition)
 					[leftRightCells setObject:info forKey:[NSString stringWithFormat:@"%i", info.yPosition]];
 			}
-		} else if (isGoingRight) {
+		} else if (isGoingRight && (self.gridCells.count > info.yPosition)) {
 			if ([[self.gridCells objectAtIndex:info.yPosition] count] - 1 > info.xPosition && info.frame.origin.x + info.frame.size.width < self.contentOffset.x + self.frame.size.width) {
 				if (![leftRightCells objectForKey:[NSString stringWithFormat:@"%i", info.yPosition]])
 					[leftRightCells setObject:info forKey:[NSString stringWithFormat:@"%i", info.yPosition]];
