@@ -17,16 +17,16 @@
 	[self setNeedsLayout];
 }
 
-- (void)layoutSubviews {
-	CGFloat v = self.slideAmount;
-	CGFloat s = self.frame.size.width;
-	
-	for (UIView *view in self.subviews) {
-		CGFloat l = view.frame.size.width;
-		NSInteger x = (NSInteger)((((v * (s - l)) + l) / 2) - l/2);
-		view.frame = CGRectMake((CGFloat)x, view.frame.origin.y, l, view.frame.size.height);
-	}
-}
+//- (void)layoutSubviews {
+//	CGFloat v = self.slideAmount;
+//	CGFloat s = self.frame.size.width;
+//	
+//	for (UIView *view in self.subviews) {
+//		CGFloat l = view.frame.size.width;
+//		NSInteger x = (NSInteger)((((v * (s - l)) + l) / 2) - l/2);
+//		view.frame = CGRectMake((CGFloat)x, view.frame.origin.y, l, view.frame.size.height);
+//	}
+//}
 
 - (void)drawRect:(CGRect)rect {
 	[super drawRect:rect];
