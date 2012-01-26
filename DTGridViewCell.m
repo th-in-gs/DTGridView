@@ -24,12 +24,10 @@
 @dynamic frame;
 
 - (id)initWithReuseIdentifier:(NSString *)anIdentifier {
-	
-	if (![super initWithFrame:CGRectZero])
-		return nil;
-	
-	identifier = [anIdentifier copy];
-	
+	self = [super initWithFrame:CGRectZero];
+	if (self) {
+		identifier = [anIdentifier copy];
+	}
 	return self;
 }
 
