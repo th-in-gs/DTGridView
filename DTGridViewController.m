@@ -9,7 +9,9 @@
 #import "DTGridViewController.h"
 
 
-@implementation DTGridViewController
+@implementation DTGridViewController {
+	DTGridView *gridView;
+}
 
 @synthesize gridView;
 
