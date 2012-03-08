@@ -9,9 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DTGridView.h"
 
-@interface DTGridViewController : UIViewController <DTGridViewDataSource, DTGridViewDelegate> {
-	DTGridView *gridView;
-}
+@interface DTGridViewController : UIViewController <DTGridViewDataSource, DTGridViewDelegate>
 
 @property (nonatomic, retain) DTGridView *gridView;
 
