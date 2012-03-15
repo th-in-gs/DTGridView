@@ -253,7 +253,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = usr/local/include/DTGridView;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/DTGridView;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -263,7 +263,7 @@
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = usr/local/include/DTGridView;
+				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/DTGridView;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
