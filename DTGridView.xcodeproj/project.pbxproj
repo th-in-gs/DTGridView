@@ -172,7 +172,7 @@
 		7D76E074144742450074C91C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Things Made Out Of Other Things";
 			};
 			buildConfigurationList = 7D76E077144742450074C91C /* Build configuration list for PBXProject "DTGridView" */;
